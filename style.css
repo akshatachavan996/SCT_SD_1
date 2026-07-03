@@ -1,0 +1,158 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#8e44ad,#ff6ec7);
+    padding:20px;
+}
+
+/* CONTAINER */
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+/* HEADER */
+.top{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+.top h1{
+    font-size:40px;
+}
+
+.top p{
+    opacity:0.9;
+}
+
+/* MAIN CARD */
+.card{
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+/* INPUT */
+input,select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    margin-top:8px;
+    font-size:16px;
+}
+
+/* ERROR */
+.error{
+    color:#ffdddd;
+    font-size:14px;
+    margin-top:5px;
+    height:18px;
+}
+
+/* DROPDOWNS */
+.dropdowns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:15px;
+}
+
+/* BUTTONS */
+.buttons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+#convertBtn{background:#00e676;color:white;}
+#swapBtn{background:#ffca28;}
+#resetBtn{background:#ff5252;color:white;}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* RESULT */
+.result-card{
+    margin-top:20px;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(18px);
+    text-align:center;
+    color:white;
+}
+
+#result{
+    font-size:24px;
+    margin-top:10px;
+}
+
+/* COPY BUTTON */
+#copyBtn{
+    margin-top:10px;
+    background:#2196f3;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+/* INFO */
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.15);
+    padding:15px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+    opacity:0.8;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .dropdowns{
+        grid-template-columns:1fr;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+}
